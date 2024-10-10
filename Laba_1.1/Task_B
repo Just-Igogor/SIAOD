@@ -1,0 +1,168 @@
+/*ЮФУ, ИКТИБ, МОП ЭВМ
+Структуры и алгоритмы обработки данных
+Тема 1.1
+КТбо1-6, Смелов Игорь Александрович
+Задание B
+18.02.2024*/
+
+#include <iostream>
+
+using namespace std;
+
+
+
+typedef struct Item {
+
+    Item* next = nullptr;
+
+    Item* prev = nullptr;
+
+    int data;
+
+}Item;
+
+
+
+typedef Item* List;
+
+
+
+int main(void) {
+
+    int N, M, R, l = 1;
+
+    cin >> N >> M >> R;
+
+    List Head, Tail, p;
+
+    Head = Tail = p = new Item;
+
+    p->data = R;
+
+    N--;
+
+
+
+    for (int i = 0; i < N; i++) {
+
+        cin >> M;
+
+        if (l == 0) {
+
+            cin >> R;
+
+            Head = Tail = p = new Item;
+
+            p->data = R;
+
+            l++;
+
+        }
+
+        else {
+
+            switch (M) {
+
+            case 1:
+
+                cin >> R;
+
+                p = new Item;
+
+                p->data = R;
+
+                p->next = Head;
+
+                Head->prev = p;
+
+                Head = p;
+
+                l++;
+
+                break;
+
+            case 2:
+
+                cin >> R;
+
+                p = new Item;
+
+                p->data = R;
+
+                p->prev = Tail;
+
+                Tail->next = p;
+
+                Tail = p;
+
+                l++;
+
+                break;
+
+            case 3:
+
+                if (l == 1) {
+
+                    cout << Head->data << " ";
+
+                    p = Head;
+
+                    delete p;
+
+                }
+
+                else {
+
+                    cout << Head->data << " ";
+
+                    p = Head;
+
+                    Head = Head->next;
+
+                    delete p;
+
+                }
+
+                l--;
+
+                break;
+
+            case 4:
+
+                if (l == 1) {
+
+                    cout << Tail->data << " ";
+
+                    p = Tail;
+
+                    delete p;
+
+                }
+
+                else {
+
+                    cout << Tail->data << " ";
+
+                    p = Tail;
+
+                    Tail = Tail->prev;
+
+                    delete p;
+
+                }
+
+                l--;
+
+                break;
+
+            }
+
+        }
+
+    }
+
+
+
+    return 0;
+
+}
