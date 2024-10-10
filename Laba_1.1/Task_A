@@ -1,0 +1,174 @@
+/* ЮФУ, ИКТИБ, МОП ЭВМ
+Структуры и алгоритмы обработки данных
+Тема 1.1
+КТбо1 - 6, Смелов Игорь Александрович
+Задание A
+18.02.2024 */
+
+#include <iostream>
+using namespace std;
+
+typedef struct Item {
+ Item* next = nullptr;
+ int data;
+}Item;
+
+typedef Item* List;
+
+int main(void) {
+
+ long long Res = 0;
+
+ List Head1 = new Item;
+
+ List Head2 = new Item;
+
+ List p1 = Head1;
+
+ List p2 = Head2;
+
+ List p;
+
+
+
+ for (int i = 0; i < 4; i++) {
+
+  cin >> p1->data;
+
+  p1->next = new Item;
+
+  p1 = p1->next;
+
+ }
+
+ List Tail1 = p1;
+
+ cin >> p1->data;
+
+ for (int i = 0; i < 4; i++) {
+
+  cin >> p2->data;
+
+  p2->next = new Item;
+
+  p2 = p2->next;
+
+ }
+
+ List Tail2 = p2;
+
+ cin >> p2->data;
+
+
+
+ p1 = Head1;
+
+ p2 = Head2;
+
+ while (p1 && p2 && Res <= 1000000) {
+
+  Res++;
+
+  if (p1->data == 0 && p2->data == 9) {
+
+   Tail1->next = new Item;
+
+   Tail1 = Tail1->next;
+
+   Tail1->data = 0;
+
+   Tail1->next = new Item;
+
+   Tail1 = Tail1->next;
+
+   Tail1->data = 9;
+
+  }
+
+  else if (p2->data == 0 && p1->data == 9) {
+
+   Tail2->next = new Item;
+
+   Tail2 = Tail2->next;
+
+   Tail2->data = 9;
+
+   Tail2->next = new Item;
+
+   Tail2 = Tail2->next;
+
+   Tail2->data = 0;
+
+  }
+
+  else if (p1->data > p2->data) {
+
+   Tail1->next = new Item;
+
+   Tail1 = Tail1->next;
+
+   Tail1->data = p1->data;
+
+   Tail1->next = new Item;
+
+   Tail1 = Tail1->next;
+
+   Tail1->data = p2->data;
+
+  }
+
+  else {
+
+   Tail2->next = new Item;
+
+   Tail2 = Tail2->next;
+
+   Tail2->data = p1->data;
+
+   Tail2->next = new Item;
+
+   Tail2 = Tail2->next;
+
+   Tail2->data = p2->data;
+
+  }
+
+  p = p1;
+
+  p1 = p1->next;
+
+  delete p;
+
+  p = p2;
+
+  p2 = p2->next;
+
+  delete p;
+
+ }
+
+
+
+ if (Res > 1000000) {
+
+  cout << "botva" << " ";
+
+ }
+
+ else if (!p1) {
+
+  cout<< "second " << Res;
+
+ }
+
+ else if (!p2) {
+
+  cout << "first " << Res;
+
+ }
+
+
+
+ return 0;
+
+}
