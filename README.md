@@ -1,5 +1,5 @@
 # SIAOD
-###Задания для лабы 1.1:
+## Задания для лабы 1.1:
 * A - https://informatics.msk.ru/mod/statements/view.php?id=206&chapterid=50#1
 
   Важно! Для реализации структуры данных использовать линейный список
@@ -9,7 +9,8 @@
 * C - https://informatics.msk.ru/mod/statements/view.php?id=206&chapterid=51#1
 
   Важно! Для реализации структуры данных использовать линейный список
-###Задания для лабы 1.2:
+  
+## Задания для лабы 1.2:
 * D - https://informatics.msk.ru/mod/statements/view.php?id=206&chapterid=52#1
 
   Важно! При решении использовать стек, реализованный в виде списка.
