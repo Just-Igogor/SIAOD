@@ -20,3 +20,10 @@
 * F - https://informatics.msk.ru/mod/statements/view.php?id=206&chapterid=112984#1
 
   Важно! При решении использовать двусвязный список.
+  
+## Задания для лабы 2.1:
+* A - https://acmp.ru/index.asp?main=task&id_task=648
+
+* B - https://acmp.ru/index.asp?main=task&id_task=686
+
+* C - https://acmp.ru/index.asp?main=task&id_task=878
