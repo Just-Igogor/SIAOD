@@ -27,3 +27,10 @@
 * B - https://acmp.ru/index.asp?main=task&id_task=686
 
 * C - https://acmp.ru/index.asp?main=task&id_task=878
+
+## Задания для лабы 2.2:
+* D - https://informatics.msk.ru/mod/statements/view.php?id=11863&chapterid=1664#1
+
+* E - https://informatics.msk.ru/mod/statements/view.php?id=11863&chapterid=1#1
+
+* F - https://informatics.msk.ru/mod/statements/view.php?id=3516&chapterid=111403#1
