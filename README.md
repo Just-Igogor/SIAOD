@@ -42,7 +42,7 @@
 
 * C - https://acmp.ru/index.asp?main=task&id_task=878
 
-## Задания для лабы 3.2(Поиск):
+## Задания для лабы 3.2(Деревья):
 * D - https://informatics.msk.ru/mod/statements/view.php?id=14538&chapterid=763#1
 
 * E - https://informatics.msk.ru/mod/statements/view.php?id=14538&chapterid=759#1
