@@ -48,3 +48,4 @@
 * E - https://informatics.msk.ru/mod/statements/view.php?id=14538&chapterid=759#1
 
 * F - https://acm.timus.ru/problem.aspx?space=1&num=2002
+
