@@ -41,3 +41,10 @@
 * B - https://acmp.ru/index.asp?main=task&id_task=686
 
 * C - https://acmp.ru/index.asp?main=task&id_task=878
+
+## Задания для лабы 3.2(Поиск):
+* D - https://informatics.msk.ru/mod/statements/view.php?id=14538&chapterid=763#1
+
+* E - https://informatics.msk.ru/mod/statements/view.php?id=14538&chapterid=759#1
+
+* F - https://acm.timus.ru/problem.aspx?space=1&num=2002
