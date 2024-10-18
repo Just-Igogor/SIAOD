@@ -1,4 +1,4 @@
-# SIAOD
+# Структуры и алгоритмы обработки данных
 ## Задания для лабы 1.1(Структуры данных; Линейные списки):
 * A - https://informatics.msk.ru/mod/statements/view.php?id=206&chapterid=50#1
 
